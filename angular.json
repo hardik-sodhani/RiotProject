@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "RiotProject": {
+    "SandboxProject": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/RiotProject",
+            "outputPath": "dist/SandboxProject",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "RiotProject:build"
+            "browserTarget": "SandboxProject:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "RiotProject:build:production"
+              "browserTarget": "SandboxProject:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "RiotProject:build"
+            "browserTarget": "SandboxProject:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "RiotProject:serve"
+            "devServerTarget": "SandboxProject:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "RiotProject:serve:production"
+              "devServerTarget": "SandboxProject:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "RiotProject"
+  "defaultProject": "SandboxProject"
 }
